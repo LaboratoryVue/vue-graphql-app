@@ -8,6 +8,9 @@ const typeDefs = gql`
     task: String
     completed: Boolean
   }
+  type Query {
+    getTodo: [Todo]
+  }
 `;
 const server = new ApolloServer({
   typeDefs
